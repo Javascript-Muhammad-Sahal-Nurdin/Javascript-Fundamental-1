@@ -53,7 +53,7 @@ console.log(typeof year)
 console.log(typeof null);
 console.log(typeof 18)
 
-// let, const, dan var 
+// let, const, dan var
 // const muncul di es6 (2015) es(ecmascript)
 /*
 let age = 19;
@@ -84,3 +84,11 @@ const continent = "Asia";
 const isIsland = false;
 isIsland = true;
 */
+
+
+// Operator
+let a = 1;
+let b = 2;
+
+tambah = a + b;
+console.log(tambah);
