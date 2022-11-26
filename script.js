@@ -50,6 +50,7 @@ year = 2003;
 console.log(year);
 console.log(typeof year)
 
+
 console.log(typeof null);
 console.log(typeof 18)
 
@@ -91,4 +92,9 @@ let a = 1;
 let b = 2;
 
 tambah = a + b;
-console.log(tambah);
+console.log(tambah)
+
+
+
+
+// Operator Assigment
