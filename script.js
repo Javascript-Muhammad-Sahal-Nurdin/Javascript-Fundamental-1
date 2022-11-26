@@ -150,7 +150,8 @@ John weight 92 kg and is 1.95 m tall.
 TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weight 85 kg and is 1.78 m tall.
 */
 
-// BMI CALCULATOR 
+// BMI CALCULATOR
+/*
 const mass1 = prompt("Masukkan berat badan Mark: ");
 let height = prompt("Masukkan tinggi badan Mark: ");
 const height1 = height * 10;
@@ -168,7 +169,7 @@ if (BMI1 > BMI2) {
     console.log("John has a higher BMI than Mark");
 }
 
-// MR JONAS SOLUTION
+ MR JONAS SOLUTION
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -178,3 +179,40 @@ const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (height * heightJohn);
 const markHeigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn , markHeigherBMI);
+*/
+
+// STRING AND TEMPLATE LITERALS
+// penggunaannya menggunakan backtick `
+
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ", a " + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas);
+
+// penggunaan menggunakan template literals
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job} !`;
+
+console.log(jonasNew);
+
+console.log(`just a regular string ...`);
+
+console.log(`string with \n\ 
+multiple \n\
+lines`);
+
+console.log(`string 
+multiple
+lines`);
+
+
+// Taking Decisions: if / else statements
+
+const age = 19;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+    console.log("Sarah can start driving license 👌");
+}
