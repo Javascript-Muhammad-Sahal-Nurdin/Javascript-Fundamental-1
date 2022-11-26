@@ -285,6 +285,22 @@ console.log(typeof NaN);
 
 console.log(String(23), 23); // warna putih string pink integer
 
-// Coersion 
+// Coersion (js punya coersion)
 console.log("I' am" + 23 + " years old."); // ini adalah coersion jadi auto conversion jadi string yang tadinya integer
+
+console.log("23" + "10" + 3);
+console.log("23" - "10" - 3);
+console.log("23" + "2");
+console.log("23" / "2");
+
+let n = '1' + 1; // hasilnya string '11'
+n = n - 1; // convert '11' jadi integer 11 dikurang 1 = 10
+console.log(n); // 10
+
+// INTINYA JIKA DITAMBAH JADI STRING, JIKA DIKURANG JADI NUMBER BIASA
+
+
+// TRUTHY AND FALSY VALUES
+// DALAM JS HANYA AD 5 FALSY VALUES
+
 
