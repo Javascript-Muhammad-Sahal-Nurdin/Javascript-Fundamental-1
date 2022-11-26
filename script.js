@@ -183,7 +183,7 @@ console.log(BMIMark, BMIJohn , markHeigherBMI);
 
 // STRING AND TEMPLATE LITERALS
 // penggunaannya menggunakan backtick `
-
+/*
 const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
@@ -192,7 +192,7 @@ const year = 2037;
 const jonas = "I'm " + firstName + ", a " + (year - birthYear) + ' years old ' + job + '!';
 console.log(jonas);
 
-// penggunaan menggunakan template literals
+penggunaan menggunakan template literals
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job} !`;
 
 console.log(jonasNew);
@@ -207,12 +207,84 @@ console.log(`string
 multiple
 lines`);
 
-
+*/
 // Taking Decisions: if / else statements
-
+/*
 const age = 19;
 const isOldEnough = age >= 18;
 
 if (isOldEnough) {
     console.log("Sarah can start driving license 👌");
 }
+*/
+const age = 15;
+
+if (age >= 18) {
+    console.log("Sarah can start driving license 👌");
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young, wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 1998;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+
+
+// Coding Challenge #2
+
+/* 
+Use the BMI example from challenge #1, and the code you already wrote, adn improve it;
+
+1. Print a nice output to the  console, saying who has the higher BMI, the message can be either "Mark's BMI is higher than John's !" or "John's BMI is higher than Mark's!"
+2. Use a template literals to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+HINT: Use an if/else statement 👌
+
+GOOD LUCK 👍
+
+
+// Mr Jonas Solution
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 88;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
+
+// if (BMIMark > BMIJohn) {
+//     console.log("Mark's BMI is higher than John's !");
+// } else {
+//     console.log("John's BMI is higher than Mark's !");
+// }
+
+// With template literals
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+    console.log(`John's BMI is (${BMIJohn}) higher than Mark's (${BMIMark})!`);
+}
+*/
+
+// Type Conversion dan Coersion
+// TYPE CONVERSION ITU MANUAL SEDANGKAN COERSION ITU OTOMATIS BEKERJA DI BALIK LAYAR
+
+const inputYear = "1991";
+// Menggunakan function
+// Harus menggunakan kapital di awal hurufnya
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas")); //Nan (Not an Number // not a valid number)
+console.log(typeof NaN);
+
+console.log(String(23), 23); // warna putih string pink integer
+
+// Coersion 
+console.log("I' am" + 23 + " years old."); // ini adalah coersion jadi auto conversion jadi string yang tadinya integer
+
