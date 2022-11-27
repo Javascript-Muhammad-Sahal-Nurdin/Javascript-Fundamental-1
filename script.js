@@ -324,7 +324,7 @@ if (height) {
 } else {
     console.log("Height is UNDEFINED");
 }
-*/
+
 
 // Equality Operators: == vs. ===
 // Jadi perbedaannya adalah jika pada === menandakan bahwa ini lebih strict dibandingkan dengan == karena tidak terjadi coersion atau penukaran otomatis tipe data. (Intinya tanda === menandakan bahwa tipe data pada variabel juga di check)
@@ -350,3 +350,35 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23? ");
+
+*/
+
+// Boolean Logic
+/* Penjelasan ada di materi dan video
+
+*/
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log("Sarah is able to drive!");
+// } else {
+//     console.log("Someone else should drive...");
+// }
+
+
+const isTired = true; // c
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive!");
+} else {
+    console.log("Someone else should drive...");
+}
