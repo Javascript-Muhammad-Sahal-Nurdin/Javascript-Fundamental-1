@@ -216,7 +216,7 @@ const isOldEnough = age >= 18;
 if (isOldEnough) {
     console.log("Sarah can start driving license 👌");
 }
-*/
+
 const age = 15;
 
 if (age >= 18) {
@@ -233,7 +233,7 @@ if (birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
-
+*/
 
 // Coding Challenge #2
 
@@ -269,7 +269,7 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI is (${BMIJohn}) higher than Mark's (${BMIMark})!`);
 }
-*/
+
 
 // Type Conversion dan Coersion
 // TYPE CONVERSION ITU MANUAL SEDANGKAN COERSION ITU OTOMATIS BEKERJA DI BALIK LAYAR
@@ -298,9 +298,26 @@ n = n - 1; // convert '11' jadi integer 11 dikurang 1 = 10
 console.log(n); // 10
 
 // INTINYA JIKA DITAMBAH JADI STRING, JIKA DIKURANG JADI NUMBER BIASA
-
+*/
 
 // TRUTHY AND FALSY VALUES
-// DALAM JS HANYA AD 5 FALSY VALUES
+// DALAM JS HANYA AD 5 FALSY VALUES: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(''));
+console.log(Boolean({}));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+// INI ADALAH LOGIC PENGGUNAANNYA
+const money = 0; // Nilai falsy dari 0 adalah false maka dia akan eksekusi yang else karena else bernilai false
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log("You should get a job!");
+}
+
+
+
 
 
