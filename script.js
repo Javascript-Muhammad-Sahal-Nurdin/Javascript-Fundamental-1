@@ -311,13 +311,19 @@ console.log(Boolean(NaN));
 
 // INI ADALAH LOGIC PENGGUNAANNYA
 const money = 0; // Nilai falsy dari 0 adalah false maka dia akan eksekusi yang else karena else bernilai false
-if (money) {
+if (money) { 
     console.log("Don't spend it all ;)");
 } else {
     console.log("You should get a job!");
 }
 
-
+// INI JUGA SAMA
+let height; // ini adalah undefined
+if (height) {
+    console.log("YAY! height is defined");
+} else {
+    console.log("Height is UNDEFINED");
+}
 
 
 
