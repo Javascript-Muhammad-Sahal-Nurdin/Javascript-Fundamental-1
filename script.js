@@ -401,9 +401,9 @@ There are two gymnastic teams, Dolphins and Koalas, they compete against each ot
 Test Data: Dolpins score 96, 108, and 89. Koalas score 88, 91, and 110.
 TEST DATA BONUS 1: Dolpins score 97, 112, and 101. Koalas score 109, 95, and 123.
 TEST DATA BONUS 2: Dolpins score 97, 112, and 101. Koalas score 109, 95, and 106.
-*/
 
-// TEST DATA 
+
+// TEST DATA
 
 // const dolpinsScore = 96 + 108 + 89;
 // const koalasScore = 96 + 108 + 89;
@@ -438,20 +438,75 @@ TEST DATA BONUS 2: Dolpins score 97, 112, and 101. Koalas score 109, 95, and 106
 
 
 // TEST DATA BONUS 2
-const dolpinsScore = 10 + 10 + 10;
-const koalasScore = 0 + 0 + 0;
+// const dolpinsScore = 10 + 10 + 10;
+// const koalasScore = 0 + 0 + 0;
 
-const scoreAverageDolphins = dolpinsScore / 3;
-const scoreAverageKoalas = koalasScore / 3;
-console.log(scoreAverageDolphins, scoreAverageKoalas);
+// const scoreAverageDolphins = dolpinsScore / 3;
+// const scoreAverageKoalas = koalasScore / 3;
+// console.log(scoreAverageDolphins, scoreAverageKoalas);
 
 
-if (scoreAverageDolphins > scoreAverageKoalas && scoreAverageDolphins >= 100 ) {
-    console.log("Dolphins Wins!!!");
-} else if (scoreAverageDolphins < scoreAverageKoalas && scoreAverageKoalas >= 100){
-    console.log("Koalas Wins!!!");
-} else if (scoreAverageDolphins === scoreAverageKoalas &&scoreAverageDolphins >= 100 && scoreAverageKoalas >= 100) {
-    console.log("Draw !!!");
-} else {
-    console.log("No one wins the trophy 😒");
+// if (scoreAverageDolphins > scoreAverageKoalas && scoreAverageDolphins >= 100 ) {
+//     console.log("Dolphins Wins!!!");
+// } else if (scoreAverageDolphins < scoreAverageKoalas && scoreAverageKoalas >= 100){
+//     console.log("Koalas Wins!!!");
+// } else if (scoreAverageDolphins === scoreAverageKoalas &&scoreAverageDolphins >= 100 && scoreAverageKoalas >= 100) {
+//     console.log("Draw !!!");
+// } else {
+//     console.log("No one wins the trophy 😒");
+// }
+
+//  The Switch Statement
+const day = "Saturday";
+
+switch (day) { // day === Saturday
+    case "Monday":
+        console.log("Plan Course structure");
+        console.log("Go to coding meetup");
+        break;
+    case "Tuesday":
+        console.log("Prepare theory videos");
+        break;
+    case "Wednesday":
+    case "Thursday":
+        console.log("Write code examples");
+        break;
+    case "Friday":
+        console.log("Record Videos");
+        break;
+    case "Saturday":
+    case "Sunday":
+        console.log("Enjoy the weekend");
+        break;
+    default:
+        console.log("Not a valid day!");
 }
+
+
+
+// Statements and Expressions
+
+// Contoh expressions: (potongan code  yang menghasilkan value)
+3 + 4
+true
+1991
+true && false && !false
+
+// Statement adalah CARA bagaiman kita mengolah code menjadi sebuah value contoh nya if else statement
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+console.log(`I'm ${2037 - 1991} years old`)
+*/
+
+// The Conditional (Ternary) Operator
+const age = 23;
+// age >= 18 ? console.log("I like to drink wine 👌") : console.log("I like to drink water 👌");
+
+const drink = age >= 18 ? "wine 👌" : "water 👌";
+
+console.log(drink);
+
+// Bisa digunakan di template literals
+console.log(`I like to drink ${age >= 18 ? "wine 👌" : "water 👌"}`);
