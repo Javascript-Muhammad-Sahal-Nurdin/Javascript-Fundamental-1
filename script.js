@@ -390,6 +390,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 There are two gymnastic teams, Dolphins and Koalas, they compete against each other 3 times. The winner with the highest average score wins the a trophy!
 
 1. Calculate the average score for each team, using the test data below 
+
 2. Compare the team's average scores to determine the winner of the competition and print it to the console. Don't forget that there be a draw, so test for that as well (draw means they have the same average score).
 
 3. BONUS 1: Include a requirements for a minimum score of 100. With this rule, a team only wins if it has a higher score of at least 100 points , HINT : Use a logical operator to test for minimum score, as well as multiple else-if blocks.
@@ -402,16 +403,55 @@ TEST DATA BONUS 1: Dolpins score 97, 112, and 101. Koalas score 109, 95, and 123
 TEST DATA BONUS 2: Dolpins score 97, 112, and 101. Koalas score 109, 95, and 106.
 */
 
-const dolpinsScore = 96 + 108 + 89;
-const koalasScore = 88 + 91 + 110;
+// TEST DATA 
+
+// const dolpinsScore = 96 + 108 + 89;
+// const koalasScore = 96 + 108 + 89;
+
+// const scoreAverageDolphins = dolpinsScore / 3;
+// const scoreAverageKoalas = koalasScore / 3;
+// console.log(scoreAverageDolphins, scoreAverageKoalas);
+
+// if (scoreAverageDolphins > scoreAverageKoalas) {
+//     console.log("Dolphins Wins!!!");
+// } else if (scoreAverageDolphins < scoreAverageKoalas){
+//     console.log("Koalas Wins!!!");
+// } else if (scoreAverageDolphins === scoreAverageKoalas) {
+//     console.log("Draw !!!");
+// }
+
+// TEST DATA BONUS 1
+// const dolpinsScore = 97 + 112 + 101;
+// const koalasScore = 109 + 95 + 123;
+
+// const scoreAverageDolphins = dolpinsScore / 3;
+// const scoreAverageKoalas = koalasScore / 3;
+// console.log(scoreAverageDolphins, scoreAverageKoalas);
+// if (scoreAverageDolphins > scoreAverageKoalas && scoreAverageDolphins >= 100 ) {
+//     console.log("Dolphins Wins!!!");
+// } else if (scoreAverageDolphins < scoreAverageKoalas && scoreAverageKoalas >= 100){
+//     console.log("Koalas Wins!!!");
+// } else if (scoreAverageDolphins === scoreAverageKoalas) {
+//     console.log("Draw !!!");
+// }
+
+
+
+// TEST DATA BONUS 2
+const dolpinsScore = 10 + 10 + 10;
+const koalasScore = 0 + 0 + 0;
 
 const scoreAverageDolphins = dolpinsScore / 3;
 const scoreAverageKoalas = koalasScore / 3;
+console.log(scoreAverageDolphins, scoreAverageKoalas);
 
-if (scoreAverageDolphins >= scoreAverageKoalas) {
+
+if (scoreAverageDolphins > scoreAverageKoalas && scoreAverageDolphins >= 100 ) {
     console.log("Dolphins Wins!!!");
-} else if (scoreAverageDolphins <= scoreAverageKoalas){
+} else if (scoreAverageDolphins < scoreAverageKoalas && scoreAverageKoalas >= 100){
     console.log("Koalas Wins!!!");
-} else {
+} else if (scoreAverageDolphins === scoreAverageKoalas &&scoreAverageDolphins >= 100 && scoreAverageKoalas >= 100) {
     console.log("Draw !!!");
+} else {
+    console.log("No one wins the trophy 😒");
 }
