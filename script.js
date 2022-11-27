@@ -298,7 +298,7 @@ n = n - 1; // convert '11' jadi integer 11 dikurang 1 = 10
 console.log(n); // 10
 
 // INTINYA JIKA DITAMBAH JADI STRING, JIKA DIKURANG JADI NUMBER BIASA
-*/
+
 
 // TRUTHY AND FALSY VALUES
 // DALAM JS HANYA AD 5 FALSY VALUES: 0, '', undefined, null, NaN
@@ -324,6 +324,29 @@ if (height) {
 } else {
     console.log("Height is UNDEFINED");
 }
+*/
+
+// Equality Operators: == vs. ===
+// Jadi perbedaannya adalah jika pada === menandakan bahwa ini lebih strict dibandingkan dengan == karena tidak terjadi coersion atau penukaran otomatis tipe data. (Intinya tanda === menandakan bahwa tipe data pada variabel juga di check)
+const age = '18';
+if (age === 18) console.log('You just become an adullt :D');
+
+// ==
+if (age == 18) console.log('You just become an adullt :D (loose)');
 
 
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
 
+if (favourite === 23) {
+    console.log("Cool 23 is an amazing number!");
+} else if (favourite === 7) {
+    console.log("7 is also a cool number");
+} else if (favourite === 9) {
+    console.log("9 is also a cool number");
+} else {
+    console.log("Number is not 23 or 7 or 9");
+}
+
+if (favourite !== 23) console.log("Why not 23? ");
